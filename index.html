@@ -3,260 +3,544 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="INTEGRATEK - Soluciones Integrales en Tecnología, CCTV, Licenciamiento, Electricidad y Equipos de Cómputo en Tepic, Nayarit">
-    <meta name="keywords" content="CCTV, licencias software, electricidad, equipos computo, Tepic, Nayarit">
-    <title>INTEGRATEK - Soluciones Integrales en Tecnología</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     
-    <!-- CSS -->
+    <!-- SEO Básico -->
+    <title>INTEGRATEK | Soluciones Integrales en Tecnología - Tepic, Nayarit</title>
+    <meta name="description" content="INTEGRATEK - Expertos en CCTV, Licenciamiento de Software, Proyectos Eléctricos, Equipos de Tecnología y Mantenimiento Integral en Tepic, Nayarit. ¡Cotiza ahora!">
+    <meta name="keywords" content="CCTV, videovigilancia, licencias software, microsoft 365, proyectos eléctricos, equipos computo, mantenimiento TI, Tepic, Nayarit, tecnología">
+    <meta name="author" content="INTEGRATEK">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://integratek.com.mx/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://integratek.com.mx/">
+    <meta property="og:title" content="INTEGRATEK | Soluciones Integrales en Tecnología">
+    <meta property="og:description" content="Expertos en CCTV, Licenciamiento, Electricidad y Equipos de Cómputo en Tepic, Nayarit.">
+    <meta property="og:image" content="images/og-image.jpg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://integratek.com.mx/">
+    <meta property="twitter:title" content="INTEGRATEK | Soluciones Integrales en Tecnología">
+    <meta property="twitter:description" content="Expertos en CCTV, Licenciamiento, Electricidad y Equipos de Cómputo en Tepic, Nayarit.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+    
+    <!-- Preconnect para rendimiento -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Fonts del sistema optimizado -->
+    <style>
+        :root {
+            --primary-blue: #1e5bb8;
+            --secondary-blue: #00a8e8;
+            --accent-gold: #FFD700;
+            --dark-gray: #1a1a2e;
+            --medium-gray: #4a4a5a;
+            --light-gray: #f4f4f9;
+            --white: #ffffff;
+            --gradient-primary: linear-gradient(135deg, #1e5bb8 0%, #00a8e8 100%);
+            --shadow-sm: 0 2px 10px rgba(30, 91, 184, 0.1);
+            --shadow-md: 0 8px 30px rgba(30, 91, 184, 0.15);
+            --shadow-lg: 0 20px 60px rgba(30, 91, 184, 0.2);
+            --radius-sm: 8px;
+            --radius-md: 16px;
+            --radius-lg: 24px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.7;
+            color: var(--dark-gray);
+            background: var(--white);
+            overflow-x: hidden;
+        }
+        
+        /* Critical CSS para above-the-fold */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gradient-primary);
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+    
+    <!-- CSS Principal -->
     <link rel="stylesheet" href="css/styles.css">
-    
-    <!-- Favicon (opcional) -->
-    <!-- <link rel="icon" type="image/x-icon" href="images/favicon.ico"> -->
 </head>
 <body>
+    <!-- Skip Link para accesibilidad -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    
     <!-- NAVEGACIÓN -->
-    <nav class="navbar">
+    <nav class="navbar" id="navbar" aria-label="Navegación principal">
         <div class="nav-container">
-            <div class="logo-nav">
-                <div class="logo-hex">
-                    <div class="logo-hex-inner"></div>
+            <a href="#inicio" class="logo" aria-label="INTEGRATEK - Ir a inicio">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 2L36 11V29L20 38L4 29V11L20 2Z" fill="white" fill-opacity="0.2"/>
+                        <path d="M20 6L32 13V27L20 34L8 27V13L20 6Z" fill="white"/>
+                        <path d="M20 10L28 15V25L20 30L12 25V15L20 10Z" fill="#1e5bb8"/>
+                    </svg>
                 </div>
-                <div class="logo-text">
-                    <h1>INTEGRA<span>TEK</span></h1>
-                </div>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#nosotros">Nosotros</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-            <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span class="logo-text">INTEGRA<span>TEK</span></span>
+            </a>
+            
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+                <span class="hamburger"></span>
             </button>
+            
+            <ul class="nav-menu" id="navMenu" role="menubar">
+                <li role="none"><a href="#inicio" role="menuitem">Inicio</a></li>
+                <li role="none"><a href="#servicios" role="menuitem">Servicios</a></li>
+                <li role="none"><a href="#nosotros" role="menuitem">Nosotros</a></li>
+                <li role="none"><a href="#contacto" role="menuitem">Contacto</a></li>
+            </ul>
         </div>
     </nav>
 
     <!-- HERO SECTION -->
-    <section class="hero" id="inicio">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+        <div class="hero-bg">
+            <img src="images/hero-tech.jpg" alt="Tecnología moderna" class="hero-image" loading="eager">
+            <div class="hero-overlay"></div>
+            <div class="hero-pattern"></div>
+            <div class="hero-glow"></div>
+        </div>
         <div class="hero-content">
-            <h2>Soluciones Integrales en Tecnología2</h2>
-            <p>Expertos en CCTV, Licenciamiento, Electricidad y Equipos de Cómputo. Tu socio tecnológico de confianza en Tepic, Nayarit.</p>
-            <a href="#contacto" class="cta-button">Solicita una Cotización</a>
+            <div class="hero-badge">
+                <span class="badge-dot"></span>
+                Soluciones Integrales en Tecnología
+            </div>
+            <h1 id="hero-title">Transforma tu Negocio con <span class="highlight">Tecnología de Vanguardia</span></h1>
+            <p class="hero-subtitle">Expertos en CCTV, Licenciamiento de Software, Proyectos Eléctricos y Equipos de Cómputo. Tu socio tecnológico de confianza en Tepic, Nayarit.</p>
+            <div class="hero-cta">
+                <a href="#contacto" class="btn btn-primary">
+                    <span>Solicitar Cotización</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#servicios" class="btn btn-secondary">Ver Servicios</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-value" data-count="150">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Clientes</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-value" data-count="500">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label">Proyectos</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-value">24/7</span>
+                    <span class="stat-label">Soporte</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Descubre más</span>
+            <div class="scroll-indicator"></div>
         </div>
     </section>
 
-    <!-- SERVICIOS -->
-    <section class="services" id="servicios">
-        <div class="section-title">
-            <h2>Nuestros Servicios</h2>
-            <p>Soluciones completas para tu negocio o empresa</p>
-        </div>
-        
-        <div class="services-grid">
-            <!-- Servicio 1: CCTV -->
-            <div class="service-card">
-                <div class="service-icon">📹</div>
-                <h3>CCTV y Videovigilancia</h3>
-                <p>Instalación, mantenimiento y monitoreo de sistemas de seguridad profesionales.</p>
-                <div class="service-features">
-                    <ul>
-                        <li>Cámaras IP y análogas</li>
-                        <li>Sistemas DVR/NVR</li>
-                        <li>Mantenimiento preventivo</li>
-                        <li>Monitoreo remoto</li>
-                    </ul>
+    <!-- CONTENIDO PRINCIPAL -->
+    <main id="main-content">
+        <!-- SERVICIOS -->
+        <section class="services" id="servicios" aria-labelledby="services-title">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Nuestros Servicios</span>
+                    <h2 id="services-title">Soluciones Completas para <span class="text-gradient">Tu Empresa</span></h2>
+                    <p class="section-desc">Ofrecemos un portafolio integral de servicios tecnológicos adaptados a las necesidades de tu negocio.</p>
                 </div>
-            </div>
-
-            <!-- Servicio 2: Licenciamiento -->
-            <div class="service-card">
-                <div class="service-icon">🔑</div>
-                <h3>Licenciamiento de Software</h3>
-                <p>Licencias originales de Microsoft, Adobe, Antivirus y software empresarial.</p>
-                <div class="service-features">
-                    <ul>
-                        <li>Microsoft 365</li>
-                        <li>Windows Server</li>
-                        <li>Antivirus empresarial</li>
-                        <li>Software especializado</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Servicio 3: Electricidad -->
-            <div class="service-card">
-                <div class="service-icon">⚡</div>
-                <h3>Proyectos Eléctricos</h3>
-                <p>Instalaciones eléctricas, mantenimiento y proyectos industriales completos.</p>
-                <div class="service-features">
-                    <ul>
-                        <li>Instalaciones eléctricas</li>
-                        <li>Tableros de control</li>
-                        <li>Sistemas de respaldo (UPS)</li>
-                        <li>Mantenimiento preventivo</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Servicio 4: Equipos de Cómputo -->
-            <div class="service-card">
-                <div class="service-icon">💻</div>
-                <h3>Equipos de Tecnología</h3>
-                <p>Venta de computadoras, laptops, servidores y accesorios de las mejores marcas.</p>
-                <div class="service-features">
-                    <ul>
-                        <li>PCs y laptops</li>
-                        <li>Servidores</li>
-                        <li>Networking</li>
-                        <li>Periféricos</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Servicio 5: Consumibles -->
-            <div class="service-card">
-                <div class="service-icon">🖨️</div>
-                <h3>Consumibles</h3>
-                <p>Tintas, tóners, papel y todos los insumos para tu oficina.</p>
-                <div class="service-features">
-                    <ul>
-                        <li>Tóners y cartuchos</li>
-                        <li>Papel y papelería</li>
-                        <li>Cables y conectores</li>
-                        <li>Accesorios varios</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Servicio 6: Mantenimiento -->
-            <div class="service-card">
-                <div class="service-icon">🔧</div>
-                <h3>Mantenimiento Integral</h3>
-                <p>Mantenimiento preventivo y correctivo de toda tu infraestructura tecnológica.</p>
-                <div class="service-features">
-                    <ul>
-                        <li>Mantenimiento de equipos</li>
-                        <li>Limpieza de sistemas</li>
-                        <li>Optimización</li>
-                        <li>Soporte técnico</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- POR QUÉ ELEGIRNOS -->
-    <section class="why-us" id="nosotros">
-        <div class="why-us-container">
-            <div class="why-us-content">
-                <h2>¿Por qué elegir INTEGRATEK?</h2>
-                <p>Somos tu socio tecnológico de confianza con años de experiencia en soluciones integrales para empresas en Tepic y toda la región.</p>
                 
-                <div class="benefits">
-                    <div class="benefit-item">
-                        <div class="benefit-icon">✓</div>
-                        <div class="benefit-text">
-                            <h4>Experiencia Comprobada</h4>
-                            <p>Años de trayectoria atendiendo empresas de todos los tamaños</p>
+                <div class="services-grid">
+                    <!-- CCTV -->
+                    <article class="service-card" data-aos="fade-up">
+                        <div class="service-icon-small">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                <circle cx="12" cy="12" r="3"/>
+                            </svg>
+                        </div>
+                        <h3>CCTV y Videovigilancia</h3>
+                        <p>Sistemas profesionales de seguridad con monitoreo remoto.</p>
+                        <ul class="service-list">
+                            <li>Cámaras IP y analógicas</li>
+                            <li>Sistemas DVR/NVR</li>
+                            <li>Monitoreo 24/7</li>
+                        </ul>
+                        <a href="#contacto" class="service-link">Solicitar información →</a>
+                    </article>
+
+                    <!-- Licenciamiento -->
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-icon-small">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                <path d="M8 21h8M12 17v4"/>
+                            </svg>
+                        </div>
+                        <h3>Licenciamiento de Software</h3>
+                        <p>Licencias originales de Microsoft, Adobe y más.</p>
+                        <ul class="service-list">
+                            <li>Microsoft 365</li>
+                            <li>Windows Server</li>
+                            <li>Antivirus empresarial</li>
+                        </ul>
+                        <a href="#contacto" class="service-link">Solicitar información →</a>
+                    </article>
+
+                    <!-- Electricidad -->
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon-small">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                        </div>
+                        <h3>Proyectos Eléctricos</h3>
+                        <p>Instalaciones eléctricas y sistemas de respaldo.</p>
+                        <ul class="service-list">
+                            <li>Instalaciones eléctricas</li>
+                            <li>Tableros de control</li>
+                            <li>Sistemas UPS</li>
+                        </ul>
+                        <a href="#contacto" class="service-link">Solicitar información →</a>
+                    </article>
+
+                    <!-- Equipos -->
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-icon-small">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                                <path d="M8 21h8M12 17v4"/>
+                            </svg>
+                        </div>
+                        <h3>Equipos de Tecnología</h3>
+                        <p>Venta de computadoras, servidores y accesorios.</p>
+                        <ul class="service-list">
+                            <li>PCs y Laptops</li>
+                            <li>Servidores</li>
+                            <li>Networking</li>
+                        </ul>
+                        <a href="#contacto" class="service-link">Solicitar información →</a>
+                    </article>
+
+                    <!-- Consumibles -->
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-icon-small">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2"/>
+                                <rect x="6" y="14" width="12" height="8"/>
+                            </svg>
+                        </div>
+                        <h3>Consumibles</h3>
+                        <p>Tintas, tóners, papel y accesorios de oficina.</p>
+                        <ul class="service-list">
+                            <li>Tóners y cartuchos</li>
+                            <li>Papel y papelería</li>
+                            <li>Cables y conectores</li>
+                        </ul>
+                        <a href="#contacto" class="service-link">Solicitar información →</a>
+                    </article>
+
+                    <!-- Mantenimiento -->
+                    <article class="service-card" data-aos="fade-up" data-aos-delay="500">
+                        <div class="service-icon-small">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-2 2 2 2 0 01-2-2v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83 0 2 2 0 010-2.83l.06-.06a1.65 1.65 0 00.33-1.82 1.65 1.65 0 00-1.51-1H3a2 2 0 01-2-2 2 2 0 012-2h.09A1.65 1.65 0 004.6 9a1.65 1.65 0 00-.33-1.82l-.06-.06a2 2 0 010-2.83 2 2 0 012.83 0l.06.06a1.65 1.65 0 001.82.33H9a1.65 1.65 0 001-1.51V3a2 2 0 012-2 2 2 0 012 2v.09a1.65 1.65 0 001 1.51 1.65 1.65 0 001.82-.33l.06-.06a2 2 0 012.83 0 2 2 0 010 2.83l-.06.06a1.65 1.65 0 00-.33 1.82V9a1.65 1.65 0 001.51 1H21a2 2 0 012 2 2 2 0 01-2 2h-.09a1.65 1.65 0 00-1.51 1z"/>
+                            </svg>
+                        </div>
+                        <h3>Mantenimiento Integral</h3>
+                        <p>Preventivo y correctivo de tu infraestructura.</p>
+                        <ul class="service-list">
+                            <li>Mantenimiento de equipos</li>
+                            <li>Limpieza de sistemas</li>
+                            <li>Soporte técnico</li>
+                        </ul>
+                        <a href="#contacto" class="service-link">Solicitar información →</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- POR QUÉ ELEGIRNOS -->
+        <section class="why-us" id="nosotros" aria-labelledby="why-title">
+            <div class="container">
+                <div class="why-grid">
+                    <div class="why-image">
+                        <img src="images/team-work.jpg" alt="Equipo de INTEGRATEK" loading="lazy">
+                        <div class="why-image-accent"></div>
+                    </div>
+                    <div class="why-content">
+                        <span class="section-tag">¿Por qué elegirnos?</span>
+                        <h2 id="why-title">Tu Socio Tecnológico de <span class="text-gradient">Confianza</span></h2>
+                        <p class="why-desc">En INTEGRATEK combinamos experiencia, tecnología de punta y compromiso para ofrecerte soluciones que impulsan el crecimiento de tu negocio.</p>
+                        
+                        <div class="benefits-grid">
+                            <div class="benefit-card">
+                                <div class="benefit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                    </svg>
+                                </div>
+                                <div class="benefit-info">
+                                    <h4>Experiencia Comprobada</h4>
+                                    <p>Años de trayectoria atendiendo empresas de todos los tamaños</p>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit-card">
+                                <div class="benefit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/>
+                                    </svg>
+                                </div>
+                                <div class="benefit-info">
+                                    <h4>Atención Personalizada</h4>
+                                    <p>Cada proyecto se adapta a las necesidades específicas de tu negocio</p>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit-card">
+                                <div class="benefit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                                    </svg>
+                                </div>
+                                <div class="benefit-info">
+                                    <h4>Respuesta Rápida</h4>
+                                    <p>Atención inmediata y tiempos de respuesta garantizados</p>
+                                </div>
+                            </div>
+                            
+                            <div class="benefit-card">
+                                <div class="benefit-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <rect x="1" y="4" width="22" height="16" rx="2"/>
+                                        <path d="M1 10h22"/>
+                                    </svg>
+                                </div>
+                                <div class="benefit-info">
+                                    <h4>Precios Competitivos</h4>
+                                    <p>La mejor relación calidad-precio del mercado regional</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="benefit-item">
-                        <div class="benefit-icon">🎯</div>
-                        <div class="benefit-text">
-                            <h4>Soluciones Personalizadas</h4>
-                            <p>Cada proyecto se adapta a las necesidades específicas de tu negocio</p>
-                        </div>
-                    </div>
-                    
-                    <div class="benefit-item">
-                        <div class="benefit-icon">⚡</div>
-                        <div class="benefit-text">
-                            <h4>Respuesta Rápida</h4>
-                            <p>Atención inmediata y tiempos de respuesta garantizados</p>
-                        </div>
-                    </div>
-                    
-                    <div class="benefit-item">
-                        <div class="benefit-icon">💰</div>
-                        <div class="benefit-text">
-                            <h4>Precios Competitivos</h4>
-                            <p>La mejor relación calidad-precio del mercado</p>
+                    <div class="why-stats">
+                        <div class="stats-card">
+                            <div class="stat-box">
+                                <span class="stat-text">Clientes Satisfechos</span>
+                                <span class="stat-number" data-count="150">0</span><span class="stat-plus">+</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-text">Proyectos Entregados</span>
+                                <span class="stat-number" data-count="500">0</span><span class="stat-plus">+</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-text">Soporte Disponible</span>
+                                <span class="stat-number">24/7</span>
+                            </div>
+                            <div class="stat-box">
+                                <span class="stat-text">Compromiso</span>
+                                <span class="stat-number">100%</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            
-            <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">100+</div>
-                    <div class="stat-label">Clientes Satisfechos</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">500+</div>
-                    <div class="stat-label">Proyectos Completados</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">24/7</div>
-                    <div class="stat-label">Soporte Disponible</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">5★</div>
-                    <div class="stat-label">Calificación Clientes</div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- CONTACTO -->
-    <section class="contact" id="contacto">
-        <div class="contact-container">
-            <h2>¿Listo para transformar tu negocio?</h2>
-            <p>Contáctanos hoy mismo y recibe una cotización personalizada sin compromiso</p>
-            <a href="tel:+523333974197" class="cta-button" style="background: white; color: #1e5bb8;">Llámanos Ahora</a>
-            
-            <div class="contact-info">
-                <div class="contact-item">
-                    <div class="contact-item-icon">📱</div>
-                    <h4>Teléfono</h4>
-                    <p>+52 (33) 3397-4197</p>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-item-icon">✉</div>
-                    <h4>Email</h4>
-                    <p>integratek.soluciones@gmail.com</p>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-item-icon">📍</div>
-                    <h4>Ubicación</h4>
-                    <p>Tepic, Nayarit, México</p>
-                </div>
-                
-                <div class="contact-item">
-                    <div class="contact-item-icon">🕐</div>
-                    <h4>Horario</h4>
-                    <p>Lun - Vie: 9:00 - 18:00</p>
+        <!-- CONTACTO -->
+        <section class="contact" id="contacto" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <span class="section-tag">Contacto</span>
+                        <h2 id="contact-title">¿Listo para Transformar tu Negocio?</h2>
+                        <p>Contáctanos hoy mismo y recibe una cotización personalizada sin compromiso.</p>
+                        
+                        <div class="contact-details">
+                            <a href="tel:+523333974197" class="contact-item">
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="contact-label">Teléfono</span>
+                                    <span class="contact-value">+52 (333) 397-4197</span>
+                                </div>
+                            </a>
+                            
+                            <a href="mailto:integratek.soluciones@gmail.com" class="contact-item">
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                        <path d="M22 6l-10 7L2 6"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="contact-label">Email</span>
+                                    <span class="contact-value">integratek.soluciones@gmail.com</span>
+                                </div>
+                            </a>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="contact-label">Ubicación</span>
+                                    <span class="contact-value">Tepic, Nayarit, México</span>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <path d="M12 6v6l4 2"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <span class="contact-label">Horario</span>
+                                    <span class="contact-value">Lun - Vie: 9:00 - 18:00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-wrapper">
+                        <h3>Envíanos un Mensaje</h3>
+                    
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" id="contactForm" action="https://formspree.io/f/xpwzgvjl" method="POST">
+                            <h3>Envíanos un Mensaje</h3>
+                            <div class="form-group">
+                                <label for="name">Nombre completo</label>
+                                <input type="text" id="name" name="name" required placeholder="Tu nombre">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo electrónico</label>
+                                <input type="email" id="email" name="email" required placeholder="tu@email.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Teléfono</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(333) 123-4567">
+                            </div>
+                            <div class="form-group">
+                                <label for="service">Servicio de interés</label>
+                                <select id="service" name="service">
+                                    <option value="">Selecciona un servicio</option>
+                                    <option value="cctv">CCTV y Videovigilancia</option>
+                                    <option value="licencias">Licenciamiento de Software</option>
+                                    <option value="electrico">Proyectos Eléctricos</option>
+                                    <option value="equipos">Equipos de Tecnología</option>
+                                    <option value="consumibles">Consumibles</option>
+                                    <option value="mantenimiento">Mantenimiento Integral</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensaje</label>
+                                <textarea id="message" name="message" rows="4" required placeholder="¿En qué podemos ayudarte?"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">
+                                <span>Enviar Mensaje</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/>
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- FOOTER -->
     <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">INTEGRA<span>TEK</span></div>
-            <p class="footer-tagline">Tecnología • Proyectos • Servicios</p>
-            
-            <div class="footer-social">
-                <a href="#" aria-label="Facebook">📘</a>
-                <a href="#" aria-label="Instagram">📷</a>
-                <a href="#" aria-label="LinkedIn">💼</a>
-                <a href="#" aria-label="Twitter">🐦</a>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#inicio" class="logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 2L36 11V29L20 38L4 29V11L20 2Z" fill="white" fill-opacity="0.2"/>
+                                <path d="M20 6L32 13V27L20 34L8 27V13L20 6Z" fill="white"/>
+                                <path d="M20 10L28 15V25L20 30L12 25V15L20 10Z" fill="#1e5bb8"/>
+                            </svg>
+                        </div>
+                        <span class="logo-text">INTEGRA<span>TEK</span></span>
+                    </a>
+                    <p class="footer-desc">Soluciones integrales en tecnología para empresas y negocios en Tepic, Nayarit y región.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+                        </a>
+                        <a href="#" aria-label="Instagram" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><path d="M17.5 6.5h.01"/></svg>
+                        </a>
+                        <a href="#" aria-label="LinkedIn" class="social-link">
+                            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2zM4 6a2 2 0 100-4 2 2 0 000 4z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="#servicios">CCTV y Videovigilancia</a></li>
+                        <li><a href="#servicios">Licenciamiento de Software</a></li>
+                        <li><a href="#servicios">Proyectos Eléctricos</a></li>
+                        <li><a href="#servicios">Equipos de Tecnología</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Empresa</h4>
+                    <ul>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                        <li><a href="#contacto">Trabaja con nosotros</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contacto</h4>
+                    <p>📞 +52 (333) 397-4197</p>
+                    <p>✉️ integratek.soluciones@gmail.com</p>
+                    <p>📍 Tepic, Nayarit, México</p>
+                </div>
             </div>
             
             <div class="footer-bottom">
@@ -266,7 +550,44 @@
         </div>
     </footer>
 
+    <!-- WhatsApp Flotante -->
+    <a href="https://wa.me/523333974197" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+        <span class="whatsapp-tooltip">¡Escríbenos!</span>
+    </a>
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "INTEGRATEK",
+        "description": "Soluciones Integrales en Tecnología - CCTV, Licenciamiento, Electricidad y Equipos de Cómputo",
+        "url": "https://integratek.com.mx",
+        "logo": "https://integratek.com.mx/images/logo.png",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+52-333-397-4197",
+            "contactType": "sales",
+            "email": "integratek.soluciones@gmail.com"
+        },
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Tepic",
+            "addressRegion": "Nayarit",
+            "addressCountry": "MX"
+        },
+        "sameAs": [
+            "https://facebook.com/integratek",
+            "https://instagram.com/integratek",
+            "https://linkedin.com/company/integratek"
+        ]
+    }
+    </script>
+
     <!-- JavaScript -->
-    <script src="js/main.js"></script>
+    <script src="js/main.js" defer></script>
 </body>
 </html>
