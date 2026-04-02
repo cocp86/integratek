@@ -579,10 +579,6 @@ body {
     gap: 24px;
 }
 
-.services {
-    background: var(--light-gray);
-}
-
 .service-card {
     background: white;
     border-radius: 20px;
