@@ -560,17 +560,17 @@ body {
    =================================== */
 .services {
     padding: 100px 0;
-    background: linear-gradient(180deg, #f0f5ff 0%, #e0ebff 100%);
+    background: linear-gradient(180deg, #b8d4f0 0%, #9fc5e8 100%);
 }
 
 .services .section-header h2,
 .services .section-header .section-desc {
-    color: white;
+    color: #1a1a2e;
 }
 
 .services .section-tag {
-    background: rgba(255,255,255,0.15);
-    color: var(--secondary-blue);
+    background: rgba(30,91,184,0.15);
+    color: var(--primary-blue);
 }
 
 .services-grid {
